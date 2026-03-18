@@ -1,0 +1,15 @@
+node_modules
+.env    
+.env.local
+dist
+
+# Android builds only
+android/app/build/
+android/.gradle/
+local.properties
+
+# iOS builds only
+ios/Pods/
+ios/Podfile.lock
+ios/build/
+*.xcworkspace/

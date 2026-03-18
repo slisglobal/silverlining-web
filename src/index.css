@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6467f2;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #0a0a16;
+  --color-card-dark: #16162d;
+  --color-border-dark: #252644;
+
+  --font-display: "Inter", "Sora", sans-serif;
+  --font-body: "Inter", "DM Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background-light);
+    color: #0f172a;
+    font-family: var(--font-body);
+    min-height: max(884px, 100dvh);
+    position: relative;
+    /* Force dark mode by default if desired */
+    background-color: var(--color-background-dark);
+    color: #f1f5f9;
+  }
+}
+
+@layer utilities {
+  .dot-grid {
+    background-image: radial-gradient(circle, rgba(100, 103, 242, 0.15) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .glass-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
